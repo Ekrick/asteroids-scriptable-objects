@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Slider picking-mode="Ignore" label="Throttle" value="42" high-value="10" binding-path="_throttlePower" focusable="false" show-input-field="true" inverted="false" />
+    <ui:Slider picking-mode="Ignore" label="Rotation" value="42" high-value="10" show-input-field="true" binding-path="_rotationPower" focusable="false" />
+</ui:UXML>
