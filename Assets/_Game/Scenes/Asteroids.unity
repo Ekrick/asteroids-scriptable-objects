@@ -152,8 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7025711a67c729542911e19d4c40d9be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _throttlePower: 10
+  _throttlePower: 1.99
   _rotationPower: 3.48
+  _throttleFV: {fileID: 11400000, guid: beb4542c9c678f14cb3e3a74aead4314, type: 2}
+  _rotationFV: {fileID: 11400000, guid: eb6f17e4493560c4b9750572ccc4f906, type: 2}
 --- !u!4 &902067018
 Transform:
   m_ObjectHideFlags: 0
@@ -374,6 +376,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2970632031999273638, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
+      propertyPath: _rotation
+      value: 
+      objectReference: {fileID: 11400000, guid: eb6f17e4493560c4b9750572ccc4f906, type: 2}
+    - target: {fileID: 2970632031999273638, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
+      propertyPath: _throttle
+      value: 
+      objectReference: {fileID: 11400000, guid: beb4542c9c678f14cb3e3a74aead4314, type: 2}
     - target: {fileID: 2970632031999273638, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: _playManager
       value: 

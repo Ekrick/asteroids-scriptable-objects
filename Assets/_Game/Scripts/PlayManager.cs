@@ -1,28 +1,25 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using Ship;
 using UnityEngine;
 using Variables;
 
 public class PlayManager : MonoBehaviour
 {
-    private GameObject _ship;
-    private Engine _engine;
+
     
-    [SerializeField] [Range (0, 10)] float _throttlePower;
-    [SerializeField] [Range (0, 10)] float _rotationPower;
+    [SerializeField] float _throttlePower;
+    [SerializeField] float _rotationPower;
+    public FloatVariable _throttleFV;
+    public FloatVariable _rotationFV;
 
-
-    private void Awake()
-    {
-        _ship = GameObject.FindGameObjectWithTag("Ship");
-        _engine = _ship.GetComponent<Engine>();
-    }
+    
 
     private void Start()
     {
-        _engine._throttle = _throttlePower;
-        _engine._rotation = _rotationPower;
+        _throttleFV._value = _throttlePower;
+        _rotationFV._value = _rotationPower;
     }
 }

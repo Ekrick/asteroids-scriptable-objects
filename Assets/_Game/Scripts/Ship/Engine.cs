@@ -8,8 +8,8 @@ namespace Ship
     public class Engine : MonoBehaviour
     {
 
-        public float _throttle;
-        public float _rotation;
+        public FloatVariable _throttle;
+        public FloatVariable _rotation;
         
 
 
@@ -40,17 +40,17 @@ namespace Ship
     
         public void Throttle()
         {
-            _rigidbody.AddForce(transform.up * _throttle, ForceMode2D.Force);
+            _rigidbody.AddForce(transform.up * _throttle._value, ForceMode2D.Force);
         }
 
         public void SteerLeft()
         {
-            _rigidbody.AddTorque(_rotation, ForceMode2D.Force);
+            _rigidbody.AddTorque(_rotation._value, ForceMode2D.Force);
         }
 
         public void SteerRight()
         {
-            _rigidbody.AddTorque(-_rotation, ForceMode2D.Force);
+            _rigidbody.AddTorque(-_rotation._value, ForceMode2D.Force);
         }
     }
 }

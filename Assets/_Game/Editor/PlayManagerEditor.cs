@@ -5,8 +5,6 @@ using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 
-
-
 [CustomEditor(typeof(PlayManager))]
 public class PlayManagerEditor : Editor
 {
