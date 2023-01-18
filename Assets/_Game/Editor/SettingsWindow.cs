@@ -11,7 +11,7 @@ public class SettingsWindow : EditorWindow
     public SettingsManager _settings;
     public VisualTreeAsset _editorUXML;
 
-    [MenuItem("Window/Settings")]
+    [MenuItem("Tools/Game Settings")]
 
     static void CreateMenu()
     {

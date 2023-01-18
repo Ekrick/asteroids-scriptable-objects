@@ -6,6 +6,6 @@
     <ui:VisualElement name="ship_Stats" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
         <ui:Slider picking-mode="Ignore" label="Throttle" value="42" high-value="10" binding-path="_throttlePower" focusable="false" show-input-field="true" inverted="false" name="throttle_Slider" />
         <ui:Slider picking-mode="Ignore" label="Rotation" value="42" high-value="10" show-input-field="true" binding-path="_rotationPower" focusable="false" name="rotation_Slider" />
-        <ui:Slider picking-mode="Ignore" label="Ship Health&#10;" value="42" high-value="100" name="health_Slider" binding-path="_maxHealth" focusable="false" show-input-field="true" />
+        <ui:SliderInt picking-mode="Ignore" label="Ship Health" value="10" high-value="20" name="health_Slider" binding-path="_maxHealth" show-input-field="true" />
     </ui:VisualElement>
 </ui:UXML>

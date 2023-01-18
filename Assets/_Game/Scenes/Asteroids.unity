@@ -381,6 +381,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: eb6f17e4493560c4b9750572ccc4f906, type: 2}
     - target: {fileID: 2970632031999273638, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
+      propertyPath: _settings
+      value: 
+      objectReference: {fileID: 11400000, guid: 484640dfe9e7f7f4887e56d2f93069a9, type: 2}
+    - target: {fileID: 2970632031999273638, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: _throttle
       value: 
       objectReference: {fileID: 11400000, guid: beb4542c9c678f14cb3e3a74aead4314, type: 2}
@@ -424,6 +428,14 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
       value: 1.2715299
       objectReference: {fileID: 0}
+    - target: {fileID: 6578066716522484772, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
+      propertyPath: _settings
+      value: 
+      objectReference: {fileID: 11400000, guid: 484640dfe9e7f7f4887e56d2f93069a9, type: 2}
+    - target: {fileID: 8326815840096961222, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
+      propertyPath: _settings
+      value: 
+      objectReference: {fileID: 11400000, guid: 484640dfe9e7f7f4887e56d2f93069a9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

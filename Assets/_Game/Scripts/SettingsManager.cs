@@ -9,6 +9,6 @@ public class SettingsManager : ScriptableObject
     [Header("Ship")]
     public float _throttlePower;
     public float _rotationPower;
-    public float _maxHealth;
+    public int _maxHealth;
 
 }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290315641ddd6254f9599202f279874b, type: 3}
   m_Name: New Settings Manager
   m_EditorClassIdentifier: 
-  _throttlePower: 2.87
-  _rotationPower: 2.79
-  _maxHealth: 72.9
+  _throttlePower: 4.73
+  _rotationPower: 4.19
+  _maxHealth: 9
