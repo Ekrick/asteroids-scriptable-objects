@@ -1,3 +1,4 @@
+using System;
 using DefaultNamespace.ScriptableEvents;
 using UnityEngine;
 using Variables;
@@ -9,14 +10,15 @@ namespace Asteroids
     public class Asteroid : MonoBehaviour
     {
         [SerializeField] private ScriptableEventInt _onAsteroidDestroyed;
+        [SerializeField] private SettingsManager _settings;
         
         [Header("Config:")]
-        [SerializeField] private float _minForce;
-        [SerializeField] private float _maxForce;
-        [SerializeField] private float _minSize;
-        [SerializeField] private float _maxSize;
-        [SerializeField] private float _minTorque;
-        [SerializeField] private float _maxTorque;
+        private float _minForce;
+        private float _maxForce;
+        private float _minSize;
+        private float _maxSize;
+        private float _minTorque;
+        private float _maxTorque;
 
         [Header("References:")]
         [SerializeField] private Transform _shape;
@@ -24,6 +26,17 @@ namespace Asteroids
         private Rigidbody2D _rigidbody;
         private Vector3 _direction;
         private int _instanceId;
+
+        private void OnEnable()
+        {
+            _minForce = _settings._minForce;
+            _maxForce = _settings._maxForce;
+            _minSize = _settings._minSize;
+            _maxSize = _settings._maxSize;
+            _minTorque = _settings._minTorque;
+            _maxTorque = _settings._maxTorque;
+        }
+        
 
         private void Start()
         {
